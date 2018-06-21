@@ -1,1 +1,1 @@
-# train_scheduler
+This is an app where you can get updated information about different trains and their schedules. It will show up-to-date arrival times and how many minutes remain until they arrive at their station.
