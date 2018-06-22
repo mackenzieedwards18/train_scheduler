@@ -38,7 +38,7 @@ $(document).ready(function(){
         }
 
         //pushing to Firebase
-        trainData.ref("/train").push(newTrain);
+        trainData.ref().push(newTrain);
 
        
 
@@ -53,7 +53,7 @@ $(document).ready(function(){
 
 });
 
-trainData.ref("/train").on("child_added", function(childSnapshot, prevChildKey){
+trainData.ref().on("child_added", function(childSnapshot, prevChildKey){
 
     var firebaseName = childSnapshot.val().name;
     var firebaseDestination = childSnapshot.val().destination;
